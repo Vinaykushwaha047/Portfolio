@@ -163,7 +163,6 @@ section {
 }
 
 .about-card,
-.project-card,
 .certificate-card,
 .edu-card,
 .skill-box,
@@ -171,6 +170,14 @@ section {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
+}
+
+.project-card{
+    background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   backdrop-filter: blur(10px);
   transition: 0.4s;
@@ -215,6 +222,7 @@ section {
   color: #38bdf8;
   margin-bottom: 20px;
 }
+
 
 .project-container {
   display: grid;
