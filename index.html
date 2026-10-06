@@ -127,6 +127,16 @@
                 <img src="Image/github.png" alt="img">
                 <h3>GitHub</h3>
             </div>
+
+             <div class="skill-box">
+                <img src="Image/Streamlit.png" alt="img">
+                <h3>Streamlit</h3>
+            </div>
+
+             <div class="skill-box">
+                <img src="Image/hardware.jpg" alt="img">
+                <h3>Hardware</h3>
+            </div>
         </div>
     </section>
 
@@ -208,6 +218,21 @@
                     <a href="https://github.com/your-repo-3" target="_blank" class="code-btn">Github link</a>
                 </div>
             </div>
+
+             <div class="project-card">
+                <div class="project-card img">
+                    <img src="Image/project5.jpg" alt="image">
+                </div>
+                <h3>Blinkit clone Website</h3>
+                <p>
+                    Developed a Blinkit Clone using HTML, CSS, and JavaScript with product search, categories, and cart functionality.
+                </p>
+
+                <div class="project-buttons">
+                    <a href="https://vinaykushwaha047.github.io/Blinkit_clone/" target="_blank" class="view-btn">View Live</a>
+                    <a href="https://github.com/your-repo-2" target="_blank" class="code-btn">Github link</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -253,6 +278,15 @@
                     <p>Anudip Foundation</p>
                 </div>
             </a>
+
+             <a href="https://drive.google.com/file/d/1WsgoTSDOeHQ2Cbmb27korvtIlhe_OF5c/view?usp=sharing"
+               target="_blank"
+               class="certificate-link">
+                <div class="certificate-card">
+                    <h3>Hardware Awareness Program</h3>
+                    <p>DISHA Institute</p>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -291,30 +325,54 @@
 
     <!-- Contact -->
     <section class="contact" id="contact">
-        <div class="section-title">
-            <h2>Contact Me</h2>
-        </div>
-
-        <div class="contact-container">
-            <div class="contact-box">
-              <i class="fa-solid fa-phone"></i>
-              <a href="tel:+918103695085" class="contact-link">
-              <p>+91 8103695085</p>  
-              </a>    
+        <div class="contact-form-shell">
+            <div class="contact-panel contact-panel-left">
+                <div class="contact-left-inner">
+                    <h2>Let’s Chat</h2>
+                    <p>
+                        Whether you have a question, want to start a project or simply want to connect.
+                    </p>
+                    <p>
+                        Feel free to send me a message in the contact form
+                    </p>
+                    <div class="orb orb-one"></div>
+                    <div class="orb orb-two"></div>
+                </div>
             </div>
 
-            <div class="contact-box">
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:Kushwahavinay047@gmail.com">
-                    <p>Kushwahavinay047@gmail.com</p>
-                </a>
-            </div>
+            <div class="contact-panel contact-panel-right">
+                <form id="contact-form" class="custom-contact-form">
+                    <h3>Contact</h3>
+                    <p class="required-note"><span>*</span> Required</p>
 
-            <div class="contact-box">
-                <i class="fa-brands fa-linkedin"></i>
-                <a href="https://www.linkedin.com/in/vinay-kushwaha-7bzd/" target="_blank">
-                  <p>LinkedIn Profile</p>  
-                </a>
+                    <div class="field-group">
+                        <label for="user_name">Name <span class="asterisk">*</span></label>
+                        <input type="text" id="user_name" name="user_name" required />
+                    </div>
+
+                    <div class="field-group">
+                        <label for="user_email">Email <span class="asterisk">*</span></label>
+                        <input type="email" id="user_email" name="user_email" required />
+                    </div>
+
+                    <div class="field-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" />
+                    </div>
+
+                    <div class="field-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" />
+                    </div>
+
+                    <div class="field-group textarea-wrap">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" id="submit-btn">SUBMIT</button>
+                    <p id="form-status" aria-live="polite"></p>
+                </form>
             </div>
         </div>
     </section>
@@ -324,6 +382,7 @@
         <p>© 2026 Vinay Kumar Kushwaha | All Rights Reserved</p>
     </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
