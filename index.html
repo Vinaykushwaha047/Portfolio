@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" type="image/png" href="Image/favicon.png">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#f8fafc">
+    <meta name="description" content="Portfolio of Vinay Kumar Kushwaha, software engineer and web developer.">
     <title>Vinay Kumar Kushwaha | Portfolio</title>
+    <link rel="icon" type="image/png" href="Image/favicon.png">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/4b8b7d1f4d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="responsive.css"/>
 </head>
 <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
     <!-- Navbar -->
    <header class="navbar">
-        <div class="logo">Vinay.</div>
+        <a class="logo" href="#home" aria-label="Vinay, home">Vinay<span>.</span></a>
 
         <nav class="nav-links" id="navLinks">
             <a href="#home">Home</a>
@@ -29,7 +32,9 @@
             <a href="#contact">Contact</a>
         </nav>
 
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <button class="menu-toggle" type="button" aria-controls="navLinks" aria-expanded="false" aria-label="Open navigation">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
    </header>
 
     <!-- Hero Section -->
@@ -51,16 +56,16 @@
             </div>
 
             <div class="socials">
-                <a href="https://www.linkedin.com/in/vinay-kushwaha-7bzd/"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Vinaykushwaha047"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/classy_vinay_07/"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:kushwahavinay047@gmail.com" class="mail-link"><i class="far fa-envelope"></i></a>
-                <a href="https://x.com/VinayKu68808032"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/vinay-kushwaha-7bzd/" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                <a href="https://github.com/Vinaykushwaha047" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/classy_vinay_07/" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="mailto:kushwahavinay047@gmail.com" class="mail-link" aria-label="Email"><i class="far fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://x.com/VinayKu68808032" aria-label="X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
             </div>
         </div>
 
         <div class="hero-image">
-            <img src="Image/profile.jpg" alt="Profile">
+            <img src="Image/profile.jpg" alt="Portrait of Vinay Kumar Kushwaha">
         </div>
     </section>
 
@@ -95,47 +100,47 @@
 
         <div class="skills-container">
             <div class="skill-box">
-                <img src="Image/c.png" alt="img">
+                <img src="Image/c.png" alt="">
                 <h3>C</h3>
             </div>
 
             <div class="skill-box">
-                <img src="Image/c++.png" alt="img">
+                <img src="Image/c++.png" alt="">
                 <h3>C++</h3>
             </div>
 
             <div class="skill-box">
-                <img src="Image/python.png" alt="img">
+                <img src="Image/python.png" alt="">
                 <h3>Python</h3>
             </div>
 
             <div class="skill-box">
-                <img src="Image/html.png" alt="img">
+                <img src="Image/html.png" alt="">
                 <h3>HTML</h3>
             </div>
 
             <div class="skill-box">
-                <img src="Image/css.png" alt="img">
+                <img src="Image/css.png" alt="">
                 <h3>CSS</h3>
             </div>
 
             <div class="skill-box">
-                <img src="Image/js.png" alt="img">
+                <img src="Image/js.png" alt="">
                 <h3>JavaScript</h3>
             </div>
 
             <div class="skill-box">
-                <img src="Image/github.png" alt="img">
+                <img src="Image/github.png" alt="">
                 <h3>GitHub</h3>
             </div>
 
              <div class="skill-box">
-                <img src="Image/Streamlit.png" alt="img">
+                <i class="fa-solid fa-chart-line skill-icon" aria-hidden="true"></i>
                 <h3>Streamlit</h3>
             </div>
 
              <div class="skill-box">
-                <img src="Image/hardware.jpg" alt="img">
+                <i class="fa-solid fa-microchip skill-icon" aria-hidden="true"></i>
                 <h3>Hardware</h3>
             </div>
         </div>
@@ -149,17 +154,17 @@
 
         <div class="skills-container">
             <div class="skill-box">
-                <img src="Image/vs.png" alt="img">
+                <img src="Image/vs.png" alt="">
                 <h3>VS Code</h3>
             </div>
 
             <div class="skill-box">
-                <img src="Image/github.png" alt="img">
+                <img src="Image/github.png" alt="">
                 <h3>GitHub</h3>
             </div>
 
             <div class="skill-box">
-                <img src="Image/git.png" alt="img">
+                <img src="Image/git.png" alt="">
                 <h3>Git</h3>
             </div>        
         </div>
@@ -173,57 +178,50 @@
 
         <div class="project-container">
             <div class="project-card">
-                <img src="Image/project1.jpg" alt="image" class="proj_img">
+                <img src="Image/project1.jpg" alt="Hotel management system preview" class="proj_img">
                 <h3>Hotel Management System</h3>
                 <p>
                     Developed a hotel management system with booking,
                     billing, room availability, and customer management.
                 </p>
-
                 <div class="project-buttons">
-                    <a href="https://your-live-link-1.com" target="_blank" class="view-btn">View Live</a>
-                    <a href="https://github.com/your-repo-1" target="_blank" class="code-btn">Github link</a>
+                    <button class="view-btn is-coming-soon" type="button" disabled aria-label="Live demo coming soon for Hotel Management System">Coming Soon</button>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="Image/project3.jpg" alt="image">
+                <img src="Image/project3.jpg" alt="Coaching classes management system preview">
                 <h3>Coaching Classes Management System</h3>
                 <p>
                     Built a student-teacher management system with CRUD
                     operations and organized data handling.
                 </p>
-
                 <div class="project-buttons">
-                    <a href="https://your-live-link-2.com" target="_blank" class="view-btn">View Live</a>
-                    <a href="https://github.com/your-repo-2" target="_blank" class="code-btn">Github link</a>
+                    <button class="view-btn is-coming-soon" type="button" disabled aria-label="Live demo coming soon for Coaching Classes Management System">Coming Soon</button>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="Image/project2.jpg" alt="image">
+                <img src="Image/project2.jpg" alt="Stock market price prediction project preview">
                 <h3>Stock Market Price Prediction</h3>
                 <p>
                     Machine learning based prediction system using
                     Python, LSTM, Random Forest and Streamlit.
                 </p>
-
                 <div class="project-buttons">
-                    <a href="https://your-live-link-3.com" target="_blank" class="view-btn">View Live</a>
-                    <a href="https://github.com/your-repo-3" target="_blank" class="code-btn">Github link</a>
+                    <a href="https://stock-market-price-predection-gtqhm7kfg5mhxpacxvgumd.streamlit.app/" target="_blank" rel="noopener noreferrer" class="view-btn">View Live <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </div>
             </div>
 
              <div class="project-card">
-                <img src="Image/project5.jpg" alt="image">
+                <img src="Image/project5.jpg" alt="Blinkit clone website preview">
                 <h3>Blinkit clone Website</h3>
                 <p>
                     Developed a Blinkit Clone using HTML, CSS, and JavaScript with product search, categories, and cart functionality.
                 </p>
 
                 <div class="project-buttons">
-                    <a href="https://vinaykushwaha047.github.io/Blinkit_clone/" target="_blank" class="view-btn">View Live</a>
-                    <a href="https://github.com/your-repo-2" target="_blank" class="code-btn">Github link</a>
+                    <a href="https://vinaykushwaha047.github.io/Blinkit_clone/" target="_blank" rel="noopener noreferrer" class="view-btn">View Live <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -238,6 +236,7 @@
         <div class="certificate-container">
             <a href="https://drive.google.com/file/d/1c8N24DcKflo0UQAzfmpelAdooJfkVsNW/view?usp=drive_link"
                target="_blank"
+               rel="noopener noreferrer"
                class="certificate-link">
                 <div class="certificate-card">
                     <h3>C++ Programming</h3>
@@ -247,6 +246,7 @@
 
             <a href="https://drive.google.com/file/d/1wxk4sFELl3ip06LRBP_Fax6QW2vDRqWE/view?usp=drive_link"
                target="_blank"
+               rel="noopener noreferrer"
                class="certificate-link">
                 <div class="certificate-card">
                     <h3>Advanced C++ Course</h3>
@@ -256,6 +256,7 @@
 
             <a href="https://drive.google.com/file/d/1-508JqwxTsA8vaQ9O0jw-WmxEh2fhJHj/view?usp=drive_link"
                target="_blank"
+               rel="noopener noreferrer"
                class="certificate-link">
                 <div class="certificate-card">
                     <h3>Future With Machine Learning</h3>
@@ -265,6 +266,7 @@
 
             <a href="https://drive.google.com/file/d/1dEg6aR4fHEWe739QApnwg-gb4FbKDVIt/view?usp=drive_link"
                target="_blank"
+               rel="noopener noreferrer"
                class="certificate-link">
                 <div class="certificate-card">
                     <h3>Data Processing & Business Analysis</h3>
@@ -274,6 +276,7 @@
 
              <a href="https://drive.google.com/file/d/1WsgoTSDOeHQ2Cbmb27korvtIlhe_OF5c/view?usp=sharing"
                target="_blank"
+               rel="noopener noreferrer"
                class="certificate-link">
                 <div class="certificate-card">
                     <h3>Hardware Awareness Program</h3>
@@ -363,8 +366,8 @@
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
 
-                    <button type="submit" id="submit-btn">SUBMIT</button>
-                    <p id="form-status" aria-live="polite"></p>
+                    <button type="submit" id="submit-btn">Send message</button>
+                    <p id="form-status" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </div>
@@ -375,6 +378,9 @@
         <p>© 2026 Vinay Kumar Kushwaha | All Rights Reserved</p>
     </footer>
 
+<button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 </body>
